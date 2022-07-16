@@ -1,4 +1,4 @@
-# workspaces
+# use-workspaces
 
 > Utility library for dealing with temporary directories and watching for file changes and doing things like mirror synchronization from a remote SSH host using Rsync
 
@@ -9,13 +9,13 @@
 Install with [npm](https://www.npmjs.com/)
 
 ```sh
-$ npm i @lordsequoia/workspaces --save-dev
+$ npm i use-workspaces --save
 ```
 
 ## Usage
 
 ```js
-var workspaces = require('@lordsequoia/workspaces');
+var workspaces = require('use-workspaces');
 var workspace = workspaces.createWorkspace();
 
 console.log(`hello world from ${workspace.workspaceName}!`, workspace);
