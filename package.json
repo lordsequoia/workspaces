@@ -1,5 +1,10 @@
 {
   "name": "@lordsequoia/workspaces",
+  "author": {
+    "name": "LordSequoia",
+    "email": "thelordsequoia@gmail.com",
+    "url": "https://github.com/lordsequoia"
+  },
   "version": "1.0.0",
   "description": "Utility library for dealing with temporary directories and watching for file changes and doing things like mirror synchronization from a remote SSH host using Rsync",
   "main": "build/main/index.js",
