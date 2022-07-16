@@ -2,6 +2,8 @@
 
 > Utility library for dealing with temporary directories and watching for file changes and doing things like mirror synchronization from a remote SSH host using Rsync
 
+[![Node.js Package](https://github.com/lordsequoia/workspaces/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/lordsequoia/workspaces/actions/workflows/npm-publish.yml)
+
 ## Install
 
 Install with [npm](https://www.npmjs.com/)
