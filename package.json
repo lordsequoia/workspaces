@@ -1,11 +1,11 @@
 {
-  "name": "@lordsequoioa/workspaces",
+  "name": "@lordsequoia/workspaces",
   "version": "1.0.0",
   "description": "Utility library for dealing with temporary directories and watching for file changes and doing things like mirror synchronization from a remote SSH host using Rsync",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/lordsequoia/@lordsequoioa/workspaces",
+  "repository": "https://github.com/lordsequoia/workspaces",
   "license": "MIT",
   "keywords": [],
   "scripts": {
