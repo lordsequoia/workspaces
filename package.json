@@ -1,5 +1,6 @@
 {
   "name": "@lordsequoia/workspaces",
+  "private": "false",
   "author": {
     "name": "LordSequoia",
     "email": "thelordsequoia@gmail.com",
