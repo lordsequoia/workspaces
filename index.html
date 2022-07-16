@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@lordsequoia/workspaces</title>
+	<meta name="description" content="Documentation for @lordsequoia/workspaces">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@lordsequoia/workspaces</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@lordsequoia/workspaces</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#workspaces" id="workspaces" style="color: inherit; text-decoration: none;">
+					<h1>workspaces</h1>
+				</a>
+				<blockquote>
+					<p>Utility library for dealing with temporary directories and watching for file changes and doing things like mirror synchronization from a remote SSH host using Rsync</p>
+				</blockquote>
+				<p><a href="https://github.com/lordsequoia/workspaces/actions/workflows/npm-publish.yml"><img src="https://github.com/lordsequoia/workspaces/actions/workflows/npm-publish.yml/badge.svg" alt="Node.js Package"></a></p>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<p>Install with <a href="https://www.npmjs.com/">npm</a></p>
+				<pre><code class="language-sh">$ npm i @lordsequoia/workspaces --save-dev
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-js"><span class="hljs-keyword">var</span> workspaces = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@lordsequoia/workspaces&#x27;</span>);
+<span class="hljs-keyword">var</span> workspace = workspaces.createWorkspace();
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`hello world from <span class="hljs-subst">${workspace.workspaceName}</span>!`</span>, workspace);
+
+<span class="hljs-keyword">var</span> dummies = workspace.createSubdirectory(<span class="hljs-string">&#x27;dummies&#x27;</span>);
+
+dummies.createFile(<span class="hljs-string">&#x27;foo.txt&#x27;</span>, <span class="hljs-string">&#x27;foo&#x27;</span>);
+dummies.appendFile(<span class="hljs-string">&#x27;foo.txt&#x27;</span>, <span class="hljs-string">&#x27;bar&#x27;</span>);
+dummies.appendLine(<span class="hljs-string">&#x27;foo.txt&#x27;</span>, <span class="hljs-string">&#x27;foobar&#x27;</span>);
+
+workspace.trashWorkspace();
+</code></pre>
+				<a href="#running-tests" id="running-tests" style="color: inherit; text-decoration: none;">
+					<h2>Running tests</h2>
+				</a>
+				<p>Install dev dependencies:</p>
+				<pre><code class="language-sh">$ npm i -d &amp;&amp; npm <span class="hljs-built_in">test</span>
+</code></pre>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<p>Pull requests and stars are always welcome. For bugs and feature requests, <a href="https://github.com/lordsequoia/workspaces/issues">please create an issue</a></p>
+				<a href="#author" id="author" style="color: inherit; text-decoration: none;">
+					<h2>Author</h2>
+				</a>
+				<p><strong>LordSequoia</strong></p>
+				<ul>
+					<li><a href="https://github.com/">github/</a></li>
+					<li><a href="http://twitter.com/">twitter/</a></li>
+				</ul>
+				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
+					<h2>License</h2>
+				</a>
+				<p>Copyright © 2022 <a href="https://github.com/lordsequoia">LordSequoia</a>
+				Licensed under the MIT license.</p>
+				<hr>
+				<p><em>This file was generated by <a href="https://github.com/jonschlinkert/readme-generator">readme-generator</a> on July 16, 2022.</em></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#workspace" class="tsd-kind-icon">Workspace</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createrandomname" class="tsd-kind-icon">create<wbr>Random<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#createworkspace" class="tsd-kind-icon">create<wbr>Workspace</a>
+					</li>
+					<li class=" tsd-kind-object-literal">
+						<a href="globals.html#default_random_name_generator_config" class="tsd-kind-icon">DEFAULT_<wbr>RANDOM_<wbr>NAME_<wbr>GENERATOR_<wbr>CONFIG</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
